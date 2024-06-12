@@ -88,7 +88,7 @@ describe('parametrized 2', () => {
         expect(pop_up).to.have.css('background-color', `${expectedResult.color}`);
         cy.wrap(pop_up).find('g').last().should('have.attr', 'data-name', `${expectedResult.icon}`);
         cy.wrap(pop_up).find('span').should('include.text', `${expectedResult.title}`);
-        cy.wrap(pop_up).find('.message').should('have.text', `${expectedResult.content}`)
+        cy.wrap(pop_up).find('.message').should('have.text', `${expectedResult.content}`);
 
       })
     })
